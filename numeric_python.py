@@ -15,3 +15,28 @@ print(f"4th element of 2nd row of array b:{b[1,3]}")
 #Array slicing  [start:end:step].
 print(b[1:])
 print(a[0:4:2])
+
+#Array copy and view
+
+copy_arr = a.copy()
+view_arr =  b.view()
+
+print(copy_arr)
+print(view_arr)
+
+#array shape 
+print(a.shape)
+
+#array reshape
+new_arr = a.reshape(3,2)
+print(new_arr)
+
+#array iteration
+
+for x in a:
+    print(x)
+
+for y in c:
+    for z in y:
+        for k in z:
+            print(k)
